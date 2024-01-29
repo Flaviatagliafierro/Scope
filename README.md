@@ -1,4 +1,4 @@
-# Scope
+# SOP
 Breaking down accuracy with subspace optimization
 
 Demo presented at EDBT/ICT 2024 Joint Conference
