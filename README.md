@@ -14,6 +14,6 @@ run the optimization.
 
 Running the experiments requires the following software to be installed:
 
-Python 3.10.4;
+Python;
 Google colab;
 Gurobi.
