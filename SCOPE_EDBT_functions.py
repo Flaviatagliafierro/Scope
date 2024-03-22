@@ -261,6 +261,7 @@ def optimizer_high(Dataset, beta, train_dataset, test_dataset, columns, target, 
     shap.summary_plot(shap_values[:,:], local_test.drop([target[Dataset.value]], axis=1))
   else:
      pass
+  return [mdl.l[i].X for i in range(len(columns))], [mdl.u[i].X for i in range(len(columns))]
 
 def optimizer_low(Dataset, beta, train_dataset, test_dataset, columns, target, sliders, mod, model): #in moduli
   up_original = []
@@ -458,3 +459,4 @@ def optimizer_low(Dataset, beta, train_dataset, test_dataset, columns, target, s
     shap.summary_plot(shap_values[:,:], local_test.drop([target[Dataset.value]], axis=1))
   else:
      pass
+  return [mdl.l[i].X for i in range(len(columns))], [mdl.u[i].X for i in range(len(columns))]
